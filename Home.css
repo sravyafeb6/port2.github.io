@@ -1,0 +1,253 @@
+@import url("https://use.typekit.net/qok3wyb.css"); /* Poppins Font */
+
+
+body {
+   background-color: rgb(230, 222, 206);
+}
+
+
+/* Drop down button */
+
+.dropdown {
+
+  display: inline-block;
+  float: right;
+  position: absolute; top: 20px; right: 25px; 
+}
+
+.dropdown .dropbtn {
+  background-color: transparent;
+  color: #303030;
+  padding: 10px;
+  font-size: 2vw;
+  border: none;
+  cursor: pointer;
+  transform: rotate(90deg);
+}
+
+.dropdown .dropbtn .bi-list {
+  stroke-width: 3px; /* Adjust the stroke width as desired */
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 100px;
+  /* box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); */
+  border-radius: 15px;
+  z-index: 1;
+  right: 0;
+  animation: dropdown-appear 0.3s ease forwards;
+  opacity: 0;
+  transform: translateY(-20px);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@keyframes dropdown-appear {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.dropdown-content a {
+  color: #323232;
+  text-decoration: none;
+  display: block;
+  padding: 10px 30px;
+  margin-right: 0px;
+  text-align: center;
+  font-family: Quasimoda;
+
+}
+
+.dropdown-content a:hover {
+  background-color: #95abe5;
+  border-radius: 0;
+}
+
+.dropdown-content a:first-child:hover {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.dropdown-content a:last-child:hover {
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.dropdown-content a,
+.dropdown-content a:hover,
+.dropdown-content a:focus,
+.dropdown-content a:visited,
+.dropdown-content a:active {
+  text-decoration: none;
+  color: #323232;
+}
+
+.dropdown-content a:focus {
+  outline: none;
+}
+
+
+/* Additional CSS for landscape and text */
+
+
+.text-container {
+ 
+  margin-top: 10%;
+  margin-left: 15%;
+  margin-right: 15%;
+  text-align: left;
+
+}
+
+.name {
+  font-size: 1.7vw;
+  font-weight: bold;
+  color: #323232;
+  font-family: Montserrat, sans-serif; 
+  font-weight: 700;
+}
+
+.named {
+  margin-top: 1.5%;
+  font-size: 1vw;
+  color: #323232;
+  font-family: Montserrat, sans-serif; 
+  font-weight: 400;
+
+
+}
+
+.description-container {
+
+  margin-top: 20%;
+  margin-left: 15%;
+  margin-right: 15%;
+
+  text-align: right;
+  
+
+}
+
+.description {
+  font-size: 1.7vw;
+  color: #323232;
+  font-family: Montserrat, sans-serif; 
+  font-weight: 700;
+}
+
+.descriptiond {
+  margin-top: 1.5%;
+  font-size: 1vw;
+  color: #323232;
+  font-family: Montserrat, sans-serif; 
+  font-weight: 400;
+}
+
+
+
+/* Customizing the footer */
+
+.container {
+  margin-top: 20%;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-bottom: 3%;
+}
+
+.row {
+  display: flex;
+  align-items: baseline; /* Vertically center align items */
+  justify-content: space-between;
+}
+
+.copy-right {
+  color: #323232;
+  font-family: Montserrat, sans-serif; /* Change font to Montserrat */
+  font-weight: 400;
+  font-size: 1.1vw;
+}
+
+.social-media-links {
+  list-style-type: none;
+  display: flex;
+  gap: 25%;
+  align-items: center; /* Vertically center align items */
+}
+
+.social-media-links li {
+  display: inline;
+}
+
+.social-media-links a {
+  display: inline-block;
+}
+
+.social-media-links svg {
+  color: #323232 !important;
+  font-size: 2vw;
+}
+
+/* chevron */
+.chevron {
+  font-size: 1.3vw;
+  position: fixed;
+  bottom: 10%;
+  left: 48vw;
+  animation: jump 1.5s infinite, fade-in 0.5s;
+  visibility: visible; /* Initially visible */
+  opacity: 1; /* Initially fully opaque */
+}
+
+@keyframes jump {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden; /* Hide after fade-out */
+  }
+}
+
+/* Hide the footer initially */
+.footer {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.footer.show {
+  visibility: visible;
+  opacity: 1;
+}

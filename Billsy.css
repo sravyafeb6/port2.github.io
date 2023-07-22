@@ -1,0 +1,118 @@
+@import url("https://use.typekit.net/qok3wyb.css"); /* Poppins Font */
+
+body {
+    background-color: #EFF0FE;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
+  }
+  
+  .dropdown .dropbtn {
+    background-color: transparent;
+    color: #323232;
+    padding: 10px;
+    font-size: 30px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropdown .dropbtn .bi-list {
+    stroke-width: 3px; /* Adjust the stroke width as desired */
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 100px;
+    /* box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); */
+    border-radius: 15px;
+    z-index: 1;
+    right: 0;
+    animation: dropdown-appear 0.3s ease forwards;
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  @keyframes dropdown-appear {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .dropdown-content a {
+    color: #323232;
+    text-decoration: none;
+    display: block;
+    padding: 10px 30px;
+    margin-right: 0px;
+    text-align: center;
+    font-family: Quasimoda;
+  
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #95abe5;
+    border-radius: 0;
+  }
+  
+  .dropdown-content a:first-child:hover {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+  
+  .dropdown-content a:last-child:hover {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+  
+  .dropdown-content a,
+  .dropdown-content a:hover,
+  .dropdown-content a:focus,
+  .dropdown-content a:visited,
+  .dropdown-content a:active {
+    text-decoration: none;
+    color: #323232;
+  }
+  
+  .dropdown-content a:focus {
+    outline: none;
+  }
+  
+  
+ /* AirLights and desctription */
+.heading{
+    font-size: 25px;
+    color: #323232;
+    font-family: Bilo;
+    font-weight: 700;
+    font-style: normal;
+    padding: 25px;
+    padding-left: 0px;
+    margin-left: 160px;
+  }
+  
+  .named {
+    margin-top: 8px;
+    font-size: 17px;
+    color: #323232;
+    font-family: Bilo; 
+    font-weight: 400; 
+  }
+  
+  
+  

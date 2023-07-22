@@ -1,0 +1,753 @@
+@import url("https://use.typekit.net/qok3wyb.css"); /* Poppins Font */
+
+
+
+body {
+  background-color: #e0c787;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  float: right;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.dropdown .dropbtn {
+  background-color: transparent;
+  color: #323232;
+  padding: 10px;
+  font-size: 30px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown .dropbtn .bi-list {
+  stroke-width: 3px; /* Adjust the stroke width as desired */
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 100px;
+  /* box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); */
+  border-radius: 15px;
+  z-index: 1;
+  right: 0;
+  animation: dropdown-appear 0.3s ease forwards;
+  opacity: 0;
+  transform: translateY(-20px);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@keyframes dropdown-appear {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.dropdown-content a {
+  color: #323232;
+  text-decoration: none;
+  display: block;
+  padding: 10px 30px;
+  margin-right: 0px;
+  text-align: center;
+  font-family: Quasimoda;
+
+}
+
+.dropdown-content a:hover {
+  background-color: #95abe5;
+  border-radius: 0;
+}
+
+.dropdown-content a:first-child:hover {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.dropdown-content a:last-child:hover {
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.dropdown-content a,
+.dropdown-content a:hover,
+.dropdown-content a:focus,
+.dropdown-content a:visited,
+.dropdown-content a:active {
+  text-decoration: none;
+  color: #323232;
+}
+
+.dropdown-content a:focus {
+  outline: none;
+}
+
+
+/* AirLights and desctription */
+.heading{
+  font-size: 25px;
+  color: #323232;
+  font-family: Bilo;
+  font-weight: 700;
+  font-style: normal;
+  padding: 25px;
+  padding-left: 0px;
+  margin-left: 160px;
+}
+
+.named {
+  margin-top: 8px;
+  font-size: 17px;
+  color: #323232;
+  font-family: Bilo; 
+  font-weight: 400; 
+}
+
+
+/* Project Overview, Text, and Box image */
+
+.project-overview {
+  margin-top: 20px;
+  display: flex;
+  align-items: flex-start;
+  font-family: Bilo;
+  color: #323232;
+  margin-bottom: 0px;
+}
+
+.project-overview h2 {
+ 
+  display: flex;
+  align-items: flex-start;
+  font-family: Bilo;
+  font-size: 25px;
+  margin-top: 0px;
+  color: #323232;
+  font-weight: 700;
+}
+
+.project-overview .text {
+
+  flex: 1;
+  margin-left: 160px; /* Adjust the margin as desired */
+  margin-right: 100px;
+  max-width: 70%;
+  font-size: 18px;
+  line-height: 2;
+  overflow: hidden;
+  color: #323232;
+  padding-top: 20px;
+}
+
+.box {
+  max-width: 25%; /* Adjust the width as desired */
+  margin-right: 0px; /* Adjust the margin as desired */
+  margin-top: 10px;
+}
+
+.box img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+
+
+/* Role and Achievements cards */
+
+.container {
+
+  display: flex;
+  justify-content: space-between;
+  padding-top: 50px;
+  padding-left: 150px;
+  padding-right: 150px;
+  padding-bottom: 0px;
+  font-family: Bilo;
+  
+}
+
+.colum {
+  flex-basis: 20%;
+  padding: 0 10px;
+  text-align: center;
+  
+}
+
+.colum .card {
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #ede7c6;
+  text-align: left;
+  margin-top: 5px;
+}
+
+
+.colum .card h2 {
+  font-size: 20px;
+  color: #323232;
+  margin-bottom: 0px;
+  display: flex;
+  justify-content: center; /* Align header text to the center */
+  line-height: 20px;
+}
+
+.colum .card p {
+  font-size: 17px;
+  color: #323232;
+  margin-top: 10px; /* Adjust the margin as desired */
+  margin-left: 10px;
+  line-height: 1.7 !important; /* Adjust the line height as desired */
+  text-align: center;
+  padding-right: 10px;
+}
+
+
+.textanimate {
+  position: relative;
+}
+
+.descript {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+
+/* Textanimate */
+
+.textanimate {
+  position: relative;
+}
+
+.descript {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+/* Textanimate */
+.textanimate {
+  position: relative;
+}
+
+.descript {
+  position: absolute;
+  top: 0;
+  left: 100px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.descript.show {
+  opacity: 1;
+}
+
+.headingg {
+  display: flex;
+}
+
+.headingg ul li {
+  cursor: pointer;
+  margin-right: 10px;
+  opacity: 0.3;
+  transition: opacity 0.5s ease;
+}
+
+.headingg ul li.active {
+  opacity: 1;
+}
+
+
+
+
+
+/* Problem Statement */
+
+.design-process {
+  display: flex;
+  align-items: flex-start;
+  padding-bottom: 0px;
+  font-family: Bilo;
+  font-size: 15px;
+  margin-top: 80px;
+  color: #323232;
+}
+
+.design-process .text {
+  flex: 1;
+  margin-left: 160px; /* Adjust the margin as desired */
+  margin-right: 50px;
+  font-size: 17px;
+  line-height: 2;
+  overflow: hidden;
+  margin-top: 0px;
+  color: #323232;
+}
+
+.boxx {
+  max-width: 30%; /* Adjust the width as desired */
+  margin-right: 160px; /* Adjust the margin as desired */
+  margin-top: 50px;
+  margin-bottom: 0px;
+  margin-left: 30px;
+}
+
+.boxx img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 0px;
+  border: 3px solid #ede7c6;
+  
+}
+
+
+/* carousel 1 */
+
+.Proto12 {
+  display: flex;
+  align-items: flex-start;
+  margin-right: 160px;
+  margin-left: 160px;
+  margin-bottom: 10px;
+  font-family: Bilo;
+  font-size: 18px;
+  margin-top: 50px;
+  color: #323232;
+}
+
+.carousel-container {
+  display: flex;
+  align-items: flex-start;
+  margin-left: 160px;
+  margin-right: 160px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+.slider {
+  width: 60%;
+  max-width: 500px;
+  height: 350px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: all 0.5s;
+  border-radius: 10px;
+}
+
+.slide img {
+  width: 85%;
+  height: 85%;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 2px solid #ede7c6;
+}
+
+.btn {
+  position: absolute;
+  border: none;
+  z-index: 10;
+  cursor: pointer;
+  color: #ede7c6;
+  font-size: 18px;
+  background: none;
+
+}
+
+.btn:active {
+  transform: scale(1.1);
+}
+
+.btn-prev {
+  top: 40%;
+  left: 4%;
+}
+
+.btn-next {
+  top: 40%;
+  right: 17%;
+}
+
+.carousel-container .text {
+  flex-grow: 1;
+  margin-left: 30px;
+}
+
+.carousel-container p {
+  font-family: Bilo;
+  line-height: 2;
+  font-size: 18px;
+  line-height: 1.5;
+  margin-right: 0px;
+  margin-left: 20px;
+  margin-top: -50px;
+  color: #323232;
+}
+
+
+  /* second carousel */
+
+  .Prototype {
+  display: flex;
+  align-items: flex-start;
+  margin-left: 160px;
+  padding-top: 50px;
+  padding-bottom: 0px;
+  font-family: Bilo;
+  font-size: 18px;
+  margin-top: 20px;
+  color: #323232;
+}
+
+.custom-carousel-container {
+  display: flex;
+  align-items: flex-start;
+  margin-left: 160px;
+  margin-right: 20px;
+  margin-bottom: 50px;
+  margin-top: 10px;
+}
+
+.custom-carousel {
+  width: 60%;
+  max-width: 500px;
+  height: 350px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  flex-shrink: 0;
+  margin-left: 50px;
+  margin-right: 70px;
+  margin-top: -70px;
+}
+
+.custom-carousel-slide {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: all 0.5s;
+  border-radius: 10px;
+  left: 25px;
+}
+
+.custom-carousel-slide img {
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 3px solid  #ede7c6;
+}
+
+.custom-carousel-btn {
+  position: absolute;
+  border: none;
+  z-index: 10;
+  cursor: pointer;
+  color: #323232;
+  font-size: 18px;
+  background: none;
+}
+
+.custom-carousel-btn:active {
+  transform: scale(1.1);
+}
+
+.custom-carousel-btn-prev {
+  top: 40%;
+  left: 8%;
+}
+
+.custom-carousel-btn-next {
+  top: 40%;
+  right: 15%;
+}
+
+.custom-carousel-container .custom-carousel-text {
+  flex-grow: 1;
+  margin-top: -25px;
+  padding-right: 0px;
+}
+
+.custom-carousel-container p {
+  font-family: Bilo;
+  line-height: 2;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #323232;
+}
+
+
+
+
+
+/* Demo & Testing */
+
+/* Add any additional styles for the container */
+.c1 {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  margin-top: 0px;
+  margin-left: 160px;
+}
+
+/* Add any additional styles for the content box */
+.content-box {
+  display: flex;
+  overflow: hidden;
+}
+
+/* Add any additional styles for the video box */
+.video-box {
+  flex: 1;
+  overflow: hidden;
+}
+
+/* Add any additional styles for the image box */
+.image-box {
+  flex: 1;
+  padding-top: 50px;
+  padding-left: 50px;
+  margin-right: 160px;
+}
+
+
+/* Add any additional styles for the video and image */
+.video-box video{
+  width: 90%;
+  height: 90%;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 3px solid #ede7c6;
+
+}
+
+.image-box img {
+  width: 100%;
+  height: 105%;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-top: -50px;
+  border: 3px solid #ede7c6;
+}
+
+
+.demotest{
+  font-family: Bilo;
+  margin-left: 130px;
+  font-size: 18px;
+  color: #323232;
+  margin-top: 60px;
+  margin-left: 160px;
+  margin-bottom: 40px;
+}
+
+
+/* Additional Documentation */
+
+.adddoc{
+  font-family: Bilo;
+  margin-left: 130px;
+  font-size: 18px;
+  color: #323232;
+  margin-top: 100px;
+  margin-left: 160px;
+  margin-right: 160px;
+}
+
+.Airvid {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 82.5%; /* Adjust the width as needed */
+  margin-left: 160px;
+  margin-top: 30px;
+  margin-bottom: 120px;
+}
+
+.Airvid video {
+  width: 45%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+.video-text {
+  flex-grow: 1;
+  padding: 0 20px; /* Adjust the padding as needed */
+  margin-left: auto; /* Adjust the left margin as needed */
+  margin-right: 20px; /* Adjust the right margin as needed */
+}
+
+
+.video-text p {
+  font-family: Bilo;
+  font-size: 18px;
+  color: #323232;
+  padding-left: 30px;
+  margin-right: 20px;
+}
+
+
+/* Responsive for iphone 8 Plus ---------------------------------------------------------------------- */
+  
+@media (min-width: 413px) and (max-width: 500px) {
+
+  /* Alkan-27 and desctription code */
+.heading{
+  font-size: 100px;
+  color: #323232;
+  font-family: Bilo;
+  font-weight: 700;
+  font-style: normal;
+  padding: 25px;
+  margin-left: 100px;
+  
+
+}
+
+.named {
+  margin-top: 8px;
+  font-size: 101px;
+  color: #323232;
+  font-family: Bilo; 
+  font-weight: 400; 
+}
+
+
+/* Project Overview, Text, and Box image */
+
+
+.project-overview {
+
+  font-family: Bilo;
+  font-size: 20px;
+  margin-top: 0px;
+  color: #323232;
+  
+}
+
+.project-overview h {
+
+  font-family: Bilo;
+  font-size: 25px;
+  color: #323232;
+  font-weight: 700;
+  margin-top: 100px;
+  
+}
+
+.project-overview .text {
+  flex: 1;
+  margin-left: 125px; /* Adjust the margin as desired */
+  margin-right: 100px;
+  max-width: 70%;
+  line-height: 1.5;
+  overflow: hidden;
+  color: #323232;
+  padding-top: 100px;
+}
+
+.box {
+  max-width: 35%; /* Adjust the width as desired */
+  margin-right: 0px; /* Adjust the margin as desired */
+  margin-top: 0px;
+}
+
+.box img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+
+
+/* Role and Achievements cards */
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 60px;
+  padding-left: 120px;
+  padding-right: 120px;
+  padding-bottom: 40px;
+  font-family: Bilo;
+  
+}
+
+.colum {
+  flex-basis: 20%;
+  padding: 0 10px;
+  text-align: center;
+  
+}
+
+.colum .card {
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #ede7c6;
+  text-align: left;
+  margin-top: 5px;
+}
+
+
+.colum .card h2 {
+  font-size: 20px;
+  color: #323232;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center; /* Align header text to the center */
+  line-height: 20px;
+}
+
+.colum .card p {
+  font-size: 18.4px;
+  color: #323232;
+  margin-top: 10px; /* Adjust the margin as desired */
+  margin-left: 10px;
+  line-height: 1.7 !important; /* Adjust the line height as desired */
+  text-align: center;
+  padding-right: 10px;
+}
+
+}

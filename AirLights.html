@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>AirLights</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="AirLights.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&family=MuseoModerno:ital@0;1&family=Poppins&family=Prompt:ital,wght@1,500&family=Quicksand:wght@300;400;500;600&family=Righteous&family=Silkscreen&display=swap" rel="stylesheet">
+
+
+
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&family=MuseoModerno:ital@0;1&family=Poppins&family=Quicksand:wght@300;400;500;600&family=Righteous&family=Silkscreen&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="https://use.typekit.net/oxu5ssx.css">
+
+  
+  <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+  
+
+
+</head>
+
+<body>
+  
+  <div class="dropdown">
+    <button class="dropbtn" onclick="toggleDropdown()">
+      <i class="bi bi-list"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="index.html">Home</a>
+      <a href="Billsy.html">Billsy</a>
+      <a href="SHWAP.html">SHWAP</a>
+      <a href="Alkan-27.html">Alkan-27</a>
+      <a href="AirLights.html">AirLights</a>
+    </div>
+  </div>
+
+  <div class="content">
+    <div class="heading">
+      <div class="name">Airlights</div>
+      <div class="named">Turn Signal Armband</div>
+    </div>
+
+    <div class="project-overview">
+        <div class="text">
+          <h2>Project Overview</h2>
+          <p><u>Purpose</u>: address the safety concerns faced by bicyclists while signaling, particularly in low-light conditions.</p>
+          <p><u>Objective</u>: develop a device that helps bicyclists better signal their turns and stay under a $500 budget.</p>
+          <p>AirLights is an armband device that enhances bicyclist safety by providing intuitive and hands-free turn signals. By nudging the elbow away from the body, a left turn signal is triggered, while nudging it towards the body activates a right turn signal. The armband stops signaling when the elbow is at rest.</p>
+        </div>
+        <div class="box">
+          <img src="images/Airl.png" alt="Box Image">
+        </div>
+      </div>
+
+
+      <div class="container">
+        <div class="colum" style="flex-basis: 30%;">
+          <div class="card">
+            <h2>Role</h2>
+            <p>Served as lead engineer, programmer, and team manager</p>
+          </div>
+        </div>
+        <div class="colum" style="flex-basis: 30%;">
+            <div class="card">
+              <h2>Skills</h2>
+              <p>Prototyping, Design, Coding, Project Management, Arduino</p>
+            </div>
+          </div>
+        <div class="colum" style="flex-basis: 40%;">
+          <div class="card">
+            <h2>Awards</h2>
+            <p>State championship awarded at NM Governor's STEM Challenge sponsored by Presbyterian</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="textanimate">
+        <div class="headingg">
+          <ul>
+            <li onclick="showParagraph(0)" id="ul0" class="active">Problem</li>
+            <li onclick="showParagraph(1)" id="ul1">Purpose</li>
+            <li onclick="showParagraph(2)" id="ul2">Objective</li>
+          </ul>
+        </div>
+        <div class="descript">
+          <div class="paragraph" id="para0">
+            <p>AirLights was inspired by a personal experience of riding my bike home from school. I encountered a dimly lit street and was approached by a car while making a turn. I realized the risks posed by the absence of signaling lights, especially when sharing the road with passing vehicles. Considering the multitasking and limited protection provided by a bicycle, I created AirLights to address the challenges of controlling the bike with one hand, signaling with the other arm, and remaining aware of vehicles.</p>
+          </div>
+          <div class="paragraph" id="para1">
+            <p>Purpose paragraph text</p>
+          </div>
+          <div class="paragraph" id="para2">
+            <p>Objective paragraph text</p>
+          </div>
+        </div>
+      </div>
+      
+      
+      
+      
+      
+
+
+      <div class="design-process">
+       <div class="text">
+            <h2>Problem Statement</h2>
+            <p>AirLights was inspired by a personal experience of riding my bike home from school. I encountered a dimly lit street and found myself being approached by a car while making a turn. This experience made me realize the risks posed by the absence of signaling lights, especially when sharing the road with passing vehicles.<br><br>Considering the multitasking and limited protection provided by a bicycle, I created AirLights to address the challenges of controlling the bike with one hand, signaling with the other arm, and remaining aware of approaching vehicles.</p>
+        </div>
+            <div class="boxx">
+          <img src="images/stem.jpg" alt="Box Image">
+        </div>
+      </div>
+
+<div class="Proto12">
+    <h2>Design Process</h2>
+</div>
+
+    
+<!-- slider container -->
+<div class="carousel-container">
+    <!-- First Image Carousel -->
+    <div class="slider">
+      <!-- slides -->
+      <div class="slide">
+        <img src="images/s1.png" alt="" />
+      </div>
+      <div class="slide">
+        <img src="images/s2.png" alt="" />
+      </div>
+      <div class="slide">
+        <img src="images/s3.png" alt="" />
+      </div>
+      <!-- Control buttons -->
+      <button class="btn btn-next"><i class="bi bi-caret-right-fill"></i></button>
+      <button class="btn btn-prev"><i class="bi bi-caret-left-fill"></i></button>
+    </div>
+
+    <div class="text">
+        <p><u>Initial Ideas</u>: <br>
+
+        A wearable jacket with turn signals:  accessories such as a backpack could cover up the signaling mechanism. <br>
+        
+        <br>Turn signal helmet / tail lights on the bike:  would lack seamlessness because the user would have to manually press buttons.<br>
+        
+       <br><u>Selected Idea</u>: For intuitiveness and seamlessness, without the need for the user to press any buttons, I opted for an armband.<br>
+        
+       <br>It is visible with any attire and accessories, users don't need to extend their arm for signaling, which can be dangerous in low-light environments, and is cost-effective.<br>
+    </p>
+    </div>
+  </div>
+    
+  
+<div class="Prototype">
+    <h2>Prototype 1 & 2</h2>
+</div>
+
+<!-- Carousel Container -->
+<div class="custom-carousel-container">
+    <div class="custom-carousel-text">
+      <p>
+        <u>Main component</u>: the accelerometer and gyroscope track the orientation and movement of the user's arm, triggering the appropriate turn signals. <br>
+        <br>Both prototypes use the same components. However, the first one is made out of an Arduino Uno and a larger breadboard, whereas the second one was made out of an Arduino Nano and a smaller breadboard for compactness.<br>
+        <br>Prototype 1 costs around $42 dollars and prototype 2 costs around $41.<br>
+      </p>
+    </div>
+  
+    <!-- Second Image Carousel -->
+    <div class="custom-carousel">
+      <!-- Slides -->
+      <div class="custom-carousel-slide">
+        <img src="images/k2.png" alt="" />
+      </div>
+      <div class="custom-carousel-slide">
+        <img src="images/k1.png" alt="" />
+      </div>
+      <!-- Control buttons -->
+      <button class="custom-carousel-btn custom-carousel-btn-next"><i class="bi bi-caret-right-fill"></i></button>
+      <button class="custom-carousel-btn custom-carousel-btn-prev"><i class="bi bi-caret-left-fill"></i></button>
+    </div>
+  </div>
+  
+  
+  
+  <div class="demotest">
+    <h2>Demo & Test Results</h2>
+</div>
+
+<div class="c1">
+  <div class="content-box">
+    <div class="video-box">
+      <video src="AirLightsdemo.mp4" controls></video>
+    </div>
+    <div class="image-box">
+      <img src="images/test.png" alt="Image">
+    </div>
+  </div>
+</div>
+
+<div class="adddoc">
+  <h2>Additional Documentation & Developments</h2>
+</div>
+
+<div class="Airvid">
+  <video src="AirLights.mp4" controls></video>
+  <div class="video-text">
+    <p><u>Potential Developments</u>: Making the device weatherproof.</p>
+    <p>Calling 911: if heart rate is not detected for a certain amount of time or if the user does not respond to AirLights after falling, 911 is automatically contacted.</p>
+    <p>More compact and seamless design, with its components embedded into the armband.</p>
+    <p>Decreasing overall costs.</p>
+    <p>Switching to other forms of rechargeable power to reduce battery wastage and pollution.</p>
+
+  </div>
+</div>
+
+         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+         <script src="AirLights.js"></script>
+</body>
+</html>

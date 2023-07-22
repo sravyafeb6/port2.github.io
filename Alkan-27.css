@@ -1,0 +1,1996 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;200;300;400&family=Comfortaa:wght@600&family=IBM+Plex+Mono:wght@700&family=MuseoModerno:ital@0;1&family=Poppins:wght@400;700&family=Prompt:ital,wght@1,500&family=Quicksand:wght@300;400;500;600&family=Righteous&family=Silkscreen&display=swap');
+
+/* background */
+
+
+body {
+  background-color: #e0e0e0;
+  background-image: radial-gradient(rgba(0, 0, 0, 0.1) 5%, transparent 5%); /* Polka dot pattern */
+  background-size: 25px 25px; /* Size of the polka dots */
+
+}
+
+ /* CSS for the loader page */
+ 
+
+/* Drop down button */
+.dropdown {
+  display: inline-block;
+  float: right;
+  position: absolute;
+  top: 20px;
+  right: 25px;
+}
+
+.dropdown .dropbtn {
+  background-color: transparent;
+  color: #303030;
+  padding: 10px;
+  font-size: 2vw;
+  border: none;
+  cursor: pointer;
+  transform: rotate(90deg);
+}
+
+.dropdown .dropbtn .bi-list {
+  stroke-width: 3px; /* Adjust the stroke width as desired */
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 100px;
+  border-radius: 15px;
+  z-index: 1;
+  right: 0;
+  opacity: 0;
+  transform: translateY(-20px);
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+}
+
+.dropdown.open .dropdown-content {
+  display: block;
+  animation-name: fade-in;
+}
+
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(0);
+  }
+}
+
+.dropdown-content a {
+  color: #323232;
+  text-decoration: none;
+  display: block;
+  padding: 10px 30px;
+  margin-right: 0px;
+  text-align: center;
+  font-family: Quasimoda;
+}
+
+.dropdown-content a:hover {
+  background-color: #95abe5;
+  border-radius: 0;
+}
+
+.dropdown-content a:first-child:hover {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.dropdown-content a:last-child:hover {
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.dropdown-content a,
+.dropdown-content a:hover,
+.dropdown-content a:focus,
+.dropdown-content a:visited,
+.dropdown-content a:active {
+  text-decoration: none;
+  color: #323232;
+}
+
+.dropdown-content a:focus {
+  outline: none;
+}
+
+
+
+
+
+/* Alkan-27 heading and desctription */
+
+
+
+.content0 {
+  display: flex;
+  align-items: end;
+  flex-grow: 1;
+  margin-left: 12%;
+  margin-right: 12%;
+  margin-top: 5%;
+}
+
+
+.description0 {
+  width: 50%;
+  margin-right: 5%;
+
+}
+
+.heading {
+  font-family: 'IBM Plex Mono';
+  font-weight: 700;
+  font-size: 4vw;
+  color: #77D6B0;
+}
+
+
+.description0 p {
+  font-size: 1vw;
+  color: #3f3f3f;
+  font-family: Be Vietnam Pro;
+  font-weight: 350; 
+  line-height: 2.5em;
+}
+
+
+.photos{
+  width: 48%;
+  gap: 5%;
+  display: flex;
+  padding-bottom: 1.5%;
+  box-shadow: 0px 0px 50px rgba(172, 172, 172, 0.1);
+
+}
+ 
+.photos img {
+  width: 47%;
+  border-radius: 1vw;
+  border: white solid 1px;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+
+
+.photos img:hover {
+  box-shadow: 0px 0px 50px rgba(172, 172, 172, 0.5);
+  animation-duration: 0.3s;
+}
+
+
+
+/* Role and Achievements cards */
+
+.container {
+  position: relative;
+  display: flex;
+  margin-left: 12%;
+  margin-right: 12%;
+  margin-top: 5%;
+  gap: 1.5%;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #e6e6e6;
+  border: solid 1px rgba(255, 255, 255, 0.2);
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-align: center;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+
+  transition: box-shadow 0.3s ease-in-out;
+  position: relative;
+  font-size: 0.9vw;
+  color: #3f3f3f;
+  font-family: Be Vietnam Pro;
+  font-weight: 300; 
+  line-height: 2em;
+  box-shadow: 0px 0px 15px rgba(172, 172, 172, 0.1);
+ 
+}
+
+.card p {
+  margin: 0;
+}
+
+.card:hover {
+  box-shadow: 0px 0px 15px rgba(172, 172, 172, 0.5);
+  animation-duration: 0.3s;
+}
+
+
+
+
+/* Text toggler/carousel */
+
+.carousel {
+  display: flex;
+  align-items: center;
+  margin-left: 12%;
+  margin-right: 12%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+
+
+.heading-column {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.2vw;
+  color: #353535;
+  margin-right: 7%;
+  line-height: 2.5vw;
+
+}
+
+.heading-column > div {
+  cursor: pointer;
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
+}
+
+.heading-column > div.active {
+  opacity: 1;
+}
+
+.description-column {
+  display: flex;
+  align-items: center;
+  font-family: 'Be Vietnam Pro';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1vw;
+  line-height: 2.4em;
+  color: #353535;
+
+}
+
+.description-column .description {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.description-column .description.active {
+  display: block;
+  opacity: 1;
+}
+
+
+
+
+
+/* Design process */
+
+.outerr {
+  display: flex;
+  position: relative;
+  margin-top: 5%;
+  margin-left: 12%;
+  align-items: center;
+  margin-right: 12%;
+  gap: 5%;
+}
+
+.header-contentt{
+ 
+  width: 120%;
+}
+
+.line{
+  font-family: Be Vietnam Pro;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1vw;
+  line-height: 2.4em;
+  color: #353535;
+}
+
+.titlee {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.7vw;
+  line-height: 8vh;
+  color: #353535
+}
+
+
+
+.in {
+  display: flex;
+  align-items: center;
+  gap: 6%;
+  font-size: 1vw;
+  color: #323232;
+  font-family: Be Vietnam Pro;
+  font-weight: 300; 
+  line-height: 2.4em;
+  color: #303030;
+}
+
+.inn {
+  font-size: 1vw;
+  color: #323232;
+  font-family: Be Vietnam Pro;
+  font-weight: 300; 
+  line-height: 2.4em;
+  color: #303030;
+  display: flex;
+  align-items: center;
+  gap: 6%;
+}
+
+.titleee{
+  margin-top: 5%;
+  font-size: 1vw;
+  color: #323232;
+  font-family: Be Vietnam Pro;
+  font-weight: 300; 
+  line-height: 2.4em;
+  color: #303030;
+}
+
+.in img {
+  width: 6%; /* Set the desired width */
+
+  height: 10%; /* Automatically calculate the height */
+  box-shadow: 0px 0px 10px rgba(92, 92, 92, 0.5);
+
+  transition: box-shadow 0.3s ease-in-out;
+  background: #303030;
+  padding: 1%;
+  border-radius: 0.7vw;
+
+}
+
+.inn img {
+  width: 6%; /* Set the desired width */
+
+  height: 10%; /* Automatically calculate the height */
+  box-shadow:  0px 4px 100px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.3s ease-in-out;
+  background: #303030;
+  padding-right: 0.9%;
+  padding-left: 0.9%;
+  padding-bottom: 1.5%;
+  padding-top: 0.5%;
+  border-radius: 0.7vw;
+}
+
+
+.in img:hover{
+  animation-duration: 0.3s;
+  box-shadow: 0px 0px 30px #767676;
+}
+
+
+.inn img:hover{
+  animation-duration: 0.3s;
+  transition: box-shadow 0.3s ease-in-out;
+  box-shadow: 0px 0px 30px #F0BE6F;
+}
+
+
+.titleee img {
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 700px;
+  margin-top: 3%;
+  }
+
+
+
+
+/* image carousel */
+
+.image-panel {
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  gap: 3%;
+  padding: 0 5%;
+  margin-left: -5%;
+  margin-right: -5%;
+  transition: transform 0.3s ease;
+  margin-top: 5%;
+  border-radius: 1.3vw;
+}
+
+.image-container {
+  flex: 0 0 auto;
+  width: 25%;
+  box-sizing: border-box;
+  border-radius: 1.3vw;
+  padding: 0 5px;
+  transition: transform 0.3s ease, opacity 0.3s ease; /* Include opacity transition here */
+}
+
+.image-container img {
+  overflow: hidden;
+  width: 100%;
+  height: 100%; /* Set height to 100% to maintain aspect ratio with scale transform */
+  border-radius: 1.3vw;
+  transition: transform 0.3s ease; /* Move this transition property here */
+}
+
+.image-container:hover {
+  transform: scale(1.15); /* Scale up the container on hover */
+  opacity: 1;
+  border-radius: 1.3vw;
+}
+
+.image-container:not(:hover) {
+  opacity: 0.8;
+  border-radius: 1.3vw;
+}
+
+
+  
+
+  
+
+
+/* Incentive Process */
+
+.incentive {
+  margin-left: 12%;
+  margin-right: 12%;
+  margin-top: 5%;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.7vw;
+  line-height: 10vh;
+  color: #353535
+}
+
+.image-containerr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2%;
+}
+
+.image-containerr img {
+
+  width: 80%;
+}
+
+
+
+
+
+/* Prototype 1 section */
+
+.top{
+  margin-top: 5%;
+  margin-left: 12%;
+  margin-right: 12%;
+}
+
+
+.top h1{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.7vw;
+  line-height: 10vh;
+  color: #353535;
+  text-align: left;  
+}
+
+.img-container7 {
+  display: flex;
+  margin-bottom: 5%;
+  margin-left: 12%;
+  margin-right: 12%;
+  gap: 5%;
+  justify-content: space-around;
+}
+
+.img-container7 img:first-child {
+  width: 40%;
+  height: auto; 
+  object-fit: contain;
+
+}
+
+.img-container7 img:last-child {
+  width: 45%;
+  height: auto; 
+  object-fit: contain;
+  padding-top: 2%;
+}
+
+
+
+
+/* Demo */
+
+.image-box h1{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.7vw;
+  color: #303535;
+  
+}
+
+.c1 {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  font-size: 1vw;
+
+  font-family: Be Vietnam Pro; 
+  font-weight: 350; 
+  line-height: 3em;
+  color: #303030;
+
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-left: 12%;
+  margin-right: 12%;
+}
+
+.content-box {
+  display: flex;
+  overflow: hidden;
+}
+
+.image-box {
+  flex: 1;
+  background: none;
+}
+
+.video-box video:hover{
+  animation-duration: 0.3s;
+}
+
+.video-box {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  background: none;
+}
+
+.video-box video {
+  max-width: 80%;
+  max-height: 80%;
+  object-fit: contain;
+  border-radius: 1vw;
+  border: 1px solid white;
+}
+
+
+
+/* Test Results Prototype 1 */
+
+.image-box1 {
+  width: 55%;
+  align-items: center;
+ }
+ 
+
+.c11 h{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.7vw;
+  color: #303535;
+  margin-bottom: 5%;
+}
+ 
+.c11 {
+
+  font-size: 1vw;
+  font-family: 'Be Vietnam Pro';
+  font-weight: 350;
+  line-height: 3em;
+  color: #303030;
+  margin-left: 12%;
+  margin-right: 12%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+ 
+ .content-box1 {
+   display: flex;
+
+ }
+ 
+
+ .video-box1 {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: space-evenly;
+  margin-right: 6%;
+  background: none;
+}
+
+
+
+.video-box1 img {
+  width: 100%;
+  height: auto;
+}
+
+
+
+
+
+/* Prototype 2 section */
+
+.top2{
+  margin-top: 5%;
+  margin-left: 12%;
+  margin-right: 12%;
+}
+
+.top2 h1{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.7vw;
+  line-height: 10vh;
+  color: #353535;
+  text-align: left;  
+}
+
+.img-container8 {
+  display: flex;
+  margin-left: 12%;
+  margin-right: 12%;
+  gap: 3%;
+  justify-content: space-around;
+}
+
+.img-container8 img:first-child {
+  width: 40%;
+  height: auto; 
+  object-fit: contain;
+
+}
+
+.img-container8 img:last-child {
+  width: 40%;
+  height: auto; 
+  object-fit: contain;
+  padding-top: 2%;
+}
+
+
+
+
+/* Test Results Prototype 2*/
+
+.image-box2 {
+  width: 55%;
+  align-items: center;
+}
+ 
+ 
+.c12 h1{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.7vw;
+  color: #303535;
+}
+ 
+.c12 {
+
+  font-size: 1vw;
+  font-family: 'Be Vietnam Pro';
+  font-weight: 350;
+  line-height: 3em;
+  color: #303030;
+  margin-left: 12%;
+  margin-right: 12%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  
+}
+ 
+ .content-box2 {
+   display: flex;
+ }
+ 
+ .video-box2 {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background: none;
+   margin-left: 5%;
+ }
+ 
+ 
+ .video-box2 h1{
+   font-family: 'Poppins';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 1.3rem;
+   color: #303535;
+   padding-bottom: 2%;
+   display: inline-block;
+ }
+ 
+ .video-box2 img {
+ 
+   width: 100%;
+   height: auto;
+   align-self: center;
+ }
+ 
+
+
+
+ /* Future Developments */
+ .titlee2{ /* Heading */
+
+ margin-left: 12%;
+ margin-right: 12%;
+ padding: none;
+ font-family: 'Poppins';
+ font-style: normal;
+ font-weight: 700;
+ font-size: 1.7vw;
+ line-height: 45px;
+ color: #353535
+
+}
+
+
+
+
+ .outerr2 { /* Entire box */
+  display: flex;
+  position: relative;
+  margin-left: 12%;
+  align-items: center;
+  margin-right: 12%;
+  gap: 6%;
+}
+
+
+.header-contentt9{ /* First Box */
+  width: 35%;
+}
+
+.header-contentt2{ /* second box */
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  width: 70%;
+}
+
+
+.in2 { /* Hydraulic system box */
+  display: flex;
+  align-items: center;
+  gap: 5%;
+  font-size: 1vw;
+  color: #323232;
+  font-family: Be Vietnam Pro;
+  font-weight: 300; 
+  line-height: 2em;
+  color: #303030;
+}
+
+
+.inn2 { /* Recycle box */
+  font-size: 1vw;
+  color: #323232;
+  font-family: Be Vietnam Pro;
+  font-weight: 300; 
+  line-height: 2em;
+  color: #303030;
+  display: flex;
+  align-items: center;
+  gap: 10%;
+}
+
+.in221{ /* Wifi Box */
+  display: flex;
+  align-items: center;
+  gap: 10%;
+  font-size: 1vw;
+  color: #323232;
+  font-family: Be Vietnam Pro;
+  font-weight: 300; 
+  line-height: 2em;
+  color: #303030;
+}
+
+.inn22{ /* Message Box */
+  display: flex;
+  align-items: center;
+  gap: 5%;
+  font-size: 1vw;
+  color: #323232;
+  font-family: Be Vietnam Pro;
+  font-weight: 300; 
+  line-height: 2em;
+  color: #303030;
+ 
+}
+
+.in2 img { /* Hydraulic system icon */
+  width: 6%; 
+  height: auto;
+  box-shadow: 0px 0px 10px rgba(92, 92, 92, 0.5);
+  transition: box-shadow 0.3s ease-in-out;
+  background: #303030;
+  border-radius: 0.5vw;
+}
+
+
+.in221 img{ /* Wifi svg */
+  width: 12%; 
+  height: auto;
+  box-shadow: 0px 0px 10px rgba(92, 92, 92, 0.5);
+  transition: box-shadow 0.3s ease-in-out;
+  background: #303030;
+  border-radius: 0.5vw;
+}
+
+
+.inn2 img{  /* Recycle icon */
+  width: 12%; 
+  height: auto;
+  box-shadow: 0px 0px 10px rgba(92, 92, 92, 0.5);
+  transition: box-shadow 0.3s ease-in-out;
+  background: #303030;
+  border-radius: 0.5vw;
+}
+
+
+.inn22 img{ /* Message icon */
+  width: 6%; 
+  height: auto;
+  box-shadow: 0px 0px 10px rgba(92, 92, 92, 0.5);
+  transition: box-shadow 0.3s ease-in-out;
+  background: #303030;
+  border-radius: 0.5vw;
+
+}
+
+
+.in2 img:hover{
+  animation-duration: 0.3s;
+  box-shadow: 0px 0px 30px #767676;
+}
+
+.in221 img:hover{
+  animation-duration: 0.3s;
+  box-shadow: 0px 0px 30px #767676;
+}
+
+.inn2 img:hover{
+  animation-duration: 0.3s;
+  box-shadow: 0px 0px 30px #767676;
+}
+
+.inn22 img:hover{
+  animation-duration: 0.3s;
+  box-shadow: 0px 0px 30px #767676;
+}
+
+
+
+
+/* Additional Information */
+
+.Addinfo{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.7vw;
+  color: #303535;
+  margin-top: 10%;
+  margin-left: 12%;
+  margin-right: 12%
+
+}
+
+
+.image-panel2 {
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  gap: 3%;
+  padding: 0 5%;
+  margin-left: -5%;
+  margin-right: -5%;
+  transition: transform 0.3s ease;
+  margin-top: 5%;
+  margin-bottom: 7%;
+}
+
+.image-container2 {
+  overflow: hidden;
+  flex: 0 0 auto;
+  width: 25%;
+  box-sizing: border-box;
+  padding: 0 5px;
+  transition: transform 0.3s ease;
+}
+
+.image-container2 img {
+  overflow: hidden;
+  width: 100%;
+  height: 74%;
+  border-radius: 10px;
+  object-fit: cover;
+
+}
+
+
+.image-container2 video {
+  overflow: hidden;
+  width: 100%;
+ 
+  border-radius: 10px;
+}
+
+.image-container2 video::-webkit-media-controls {
+  display: none;
+}
+
+/* Rest of the CSS code remains the same */
+
+
+.image-container2:first-child:hover,
+.image-container2:last-child:hover {
+  overflow: hidden;
+  opacity: 1;
+}
+
+.image-container2:first-child:not(:hover),
+.image-container2:last-child:not(:hover) {
+  overflow: hidden;
+  opacity: 0.8;
+}
+
+.image-container2 {
+  overflow: hidden;
+  transition: opacity 0.3s ease;
+}
+
+/* ---------------------------------------------------------------------------------- */
+
+
+@media only screen and (max-width: 767px) {
+
+
+  /* Drop down button */
+.dropdown {
+  display: inline-block;
+  float: right;
+  position: absolute;
+  top: 20px;
+  right: 25px;
+}
+
+.dropdown .dropbtn {
+  background-color: transparent;
+  color: #303030;
+  padding: 10px;
+  font-size: 4vw;
+  border: none;
+  cursor: pointer;
+  transform: rotate(90deg);
+}
+
+.dropdown .dropbtn .bi-list {
+  stroke-width: 3px; /* Adjust the stroke width as desired */
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 100px;
+  border-radius: 15px;
+  z-index: 1;
+  right: 0;
+  opacity: 0;
+  transform: translateY(-20px);
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+}
+
+.dropdown.open .dropdown-content {
+  display: block;
+  animation-name: fade-in;
+}
+
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(0);
+  }
+}
+
+.dropdown-content a {
+  color: #323232;
+  text-decoration: none;
+  display: block;
+  padding: 10px 30px;
+  margin-right: 0px;
+  text-align: center;
+  font-family: Quasimoda;
+}
+
+.dropdown-content a:hover {
+  background-color: #95abe5;
+  border-radius: 0;
+}
+
+.dropdown-content a:first-child:hover {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.dropdown-content a:last-child:hover {
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.dropdown-content a,
+.dropdown-content a:hover,
+.dropdown-content a:focus,
+.dropdown-content a:visited,
+.dropdown-content a:active {
+  text-decoration: none;
+  color: #323232;
+}
+
+.dropdown-content a:focus {
+  outline: none;
+}
+
+
+/* Alkan-27 heading and desctription */
+
+.content0 {
+
+  margin-left: 12%;
+  margin-right: 12%;
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+
+.description0{
+  margin-left: 0%;
+  margin-right: 0%;
+  width: 100%;
+}
+
+
+.heading {
+  font-family: 'IBM Plex Mono';
+  font-weight: 700;
+  font-size: 7vw;
+  color: #77D6B0;
+}
+
+
+.description0 p {
+  font-size: 3vw;
+  color: #3f3f3f;
+  font-family: Be Vietnam Pro;
+  font-weight: 350; 
+  line-height: 2.5em;
+}
+
+
+.photos{
+  width: 100%;
+  gap: 5%;
+ 
+margin-top: 3%;
+  padding-bottom: 1.5%;
+  box-shadow: 0px 0px 50px rgba(172, 172, 172, 0.1);
+
+}
+ 
+.photos img {
+  width: 47%;
+  border-radius: 1vw;
+  border: white solid 1px;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+
+
+
+
+
+/* Role and Achievements cards */
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1); /* change to (2, 1fr) for 2 by 2 grid */
+  gap: 3%;
+  margin-top: 10%;
+
+}
+
+.card {
+  object-fit: cover;
+  width: auto; /* Set width to take up the full space of the grid cell */
+  height: 35%;
+  font-size: 3vw;
+  padding: 10%;
+}
+
+.card:nth-child(3) {
+  grid-column: span 2; /* Span across two grid columns */
+}
+
+
+
+
+/* Text toggler/carousel */
+
+.carousel {
+  display: flex;
+  align-items: center;
+  margin-left: 12%;
+  margin-right: 12%;
+  margin-top: 20%;
+  margin-bottom: 5%; 
+}
+
+
+
+.heading-column {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3vw;
+  color: #353535;
+  margin-right: 7%;
+  line-height: 8vw;
+
+}
+
+.heading-column > div {
+  cursor: pointer;
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
+}
+
+.heading-column > div.active {
+  opacity: 1;
+}
+
+.description-column {
+  display: flex;
+  align-items: center;
+  font-family: 'Be Vietnam Pro';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 3vw;
+  line-height: 2.4em;
+  color: #353535;
+
+}
+
+.description-column .description {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.description-column .description.active {
+  display: block;
+  opacity: 1;
+}
+
+
+
+
+
+/* Design process */
+
+.outerr {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-top: 10%;
+  margin-left: 12%;
+  align-items: center;
+  margin-right: 12%;
+  gap: 5%;
+}
+
+.header-contentt{
+  width: 100%;
+}
+
+
+.titlee {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3.5vw;
+
+
+  color: #353535
+}
+
+.line{
+  font-family: Be Vietnam Pro;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 3vw;
+  line-height: 2.4em;
+  color: #353535;
+  margin-bottom: 3%;
+}
+
+
+.in {
+  display: flex;
+  align-items: center;
+  gap: 6%;
+  font-size: 3vw;
+  color: #323232;
+  font-family: Be Vietnam Pro;
+  font-weight: 300; 
+  line-height: 2.4em;
+  color: #303030;
+
+}
+
+.inn {
+  font-size: 3vw;
+  color: #323232;
+  font-family: Be Vietnam Pro;
+  font-weight: 300; 
+  line-height: 2.4em;
+  color: #303030;
+  display: flex;
+  align-items: center;
+  gap: 6%;
+}
+
+.titleee{
+  margin-top: 5%;
+  font-size: 3vw;
+  color: #323232;
+  font-family: Be Vietnam Pro;
+  font-weight: 300; 
+  line-height: 2.4em;
+  color: #303030;
+
+}
+
+.in img {
+  width: 6%; /* Set the desired width */
+
+  height: 10%; /* Automatically calculate the height */
+  box-shadow: 0px 0px 10px rgba(92, 92, 92, 0.5);
+
+  transition: box-shadow 0.3s ease-in-out;
+  background: #303030;
+  padding: 1%;
+  border-radius: 1.5vw;
+
+}
+
+.inn img {
+  width: 6%; /* Set the desired width */
+
+  height: 10%; /* Automatically calculate the height */
+  box-shadow:  0px 4px 100px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.3s ease-in-out;
+  background: #303030;
+  padding-right: 0.9%;
+  padding-left: 0.9%;
+  padding-bottom: 1.5%;
+  padding-top: 0.5%;
+  border-radius: 1.5vw;
+}
+
+
+.in img:hover{
+  animation-duration: 0.3s;
+  box-shadow: 0px 0px 30px #767676;
+}
+
+
+.inn img:hover{
+  animation-duration: 0.3s;
+  transition: box-shadow 0.3s ease-in-out;
+  box-shadow: 0px 0px 30px #F0BE6F;
+}
+
+
+.titleee img {
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 700px;
+  margin-top: 3%;
+  }
+
+
+
+
+/* image carousel */
+
+.image-panel {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-left: 0%;
+  padding-right: 0%;
+
+
+  margin-right: 12%;
+  margin-left: 12%;
+  margin-top: 10%;
+
+}
+
+.image-container {
+  width: 100%;
+  padding-bottom: 2.5%;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 1.3vw;
+  padding: 0%;
+  overflow: none;
+}
+
+  
+.image-container:first-child:hover,
+.image-container:last-child:hover {
+  overflow: hidden;
+  opacity: 1;
+}
+
+.image-container:first-child:not(:hover),
+.image-container:last-child:not(:hover) {
+  overflow: hidden;
+  opacity: 1;
+}
+
+.image-container {
+  overflow: hidden;
+  transition: opacity 0.3s ease;
+}
+
+  
+
+
+/* Incentive Process */
+
+.incentive {
+  margin-left: 12%;
+  margin-right: 12%;
+  margin-top: 10%;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3.5vw;
+  line-height: 10vh;
+  color: #353535
+}
+
+.image-containerr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2%;
+}
+
+.image-containerr img {
+
+  width: 100%;
+}
+
+
+
+
+
+/* Prototype 1 section */
+
+.top{
+  margin-top: 10%;
+  margin-left: 12%;
+  margin-right: 12%;
+}
+
+
+.top h1{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3.5vw;
+  line-height: 10vh;
+  color: #353535;
+  text-align: left;  
+}
+
+.img-container7 {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5%;
+  margin-left: 12%;
+  margin-right: 12%;
+  gap: 5%;
+  justify-content: space-around;
+}
+
+.img-container7 img:first-child {
+  width: 90%;
+  height: auto; 
+  object-fit: contain;
+  margin-bottom: 10%;
+  align-self: center;
+
+}
+
+.img-container7 img:last-child {
+  width: 100%;
+  height: auto; 
+  object-fit: contain;
+  padding-top: 2%;
+  align-self: center;
+}
+
+
+
+
+
+
+/* Demo */
+
+.image-box h1{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3.5vw;
+  color: #303535;
+
+}
+
+.c1 {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  font-size: 3vw;
+
+  font-family: Be Vietnam Pro; 
+  font-weight: 350; 
+  line-height: 3em;
+  color: #303030;
+  margin-left: 12%;;
+  margin-right: 12%;
+  margin-top: 10%;
+  margin-bottom: 5%;
+
+}
+
+.content-box {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  width: 100%;
+  
+}
+
+.image-box {
+  flex: 1;
+  margin-right: 6%;
+  background: none;
+  margin-top: 3%;
+  width: 100%;
+ 
+}
+
+.video-box video:hover{
+  animation-duration: 0.3s;
+}
+
+.video-box {
+
+  display: flex;
+
+margin-top: 5%;
+  align-items: center;
+  justify-content: center;
+
+  background: none;
+}
+
+.video-box video {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  border-radius: 10px;
+  border: 1px solid white;
+}
+
+
+
+/* Test Results Prototype 1 */
+
+.image-box1 {
+  width: 100%;
+  align-items: center;
+}
+ 
+
+.c11 h{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3.5vw;
+  color: #303535;
+}
+ 
+.c11 {
+
+  font-size: 3vw;
+  font-family: 'Be Vietnam Pro';
+  font-weight: 350;
+  line-height: 3em;
+  color: #303030;
+  margin-left: 12%;
+  margin-right: 12%;
+  margin-top: 15%;
+  margin-bottom: 5%;
+}
+ 
+ .content-box1 {
+   display: flex;
+   flex-direction: column;
+   
+ }
+ 
+
+ 
+ .video-box1 {
+
+display: flex;
+  align-items: left;
+  justify-content: space-evenly;
+  margin-right: 6%;
+  background: none;
+  width: 100%;
+}
+
+
+
+.video-box1 img {
+  width: 100%;
+  height: auto;
+  margin-top: 8%;
+  margin-bottom: 3%;
+
+}
+
+
+
+
+
+/* Prototype 2 section */
+
+
+.top2{
+  margin-top: 10%;
+  margin-left: 12%;
+  margin-right: 12%;
+}
+
+.top2 h1{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3.5vw;
+  line-height: 10vh;
+  color: #353535;
+  text-align: left;  
+}
+
+.img-container8 {
+  display: flex;
+  flex-direction: column;
+  margin-left: 12%;
+  margin-right: 12%;
+  gap: 3%;
+  justify-content: space-around;
+}
+
+.img-container8 img:first-child {
+  width:  95%;
+  height: auto; 
+  align-self: center;
+  padding-left: 2%;
+  object-fit: contain;
+  margin-bottom: 15%;
+
+}
+
+.img-container8 img:last-child {
+  width: 95%;
+  height: auto; 
+  align-self: center;
+  object-fit: contain;
+  padding-top: 2%;
+  padding-left: 2%;
+}
+
+
+
+/* Test Results Prototype 2*/
+
+.image-box2 {
+  width: 100%;
+  align-items: center;
+ }
+ 
+ 
+ .c12 h1{
+   font-family: 'Poppins';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 3.5vw;
+   color: #303535;
+ }
+ 
+ .c12 {
+ 
+   font-size: 3vw;
+   font-family: 'Be Vietnam Pro';
+   font-weight: 350;
+   line-height: 3em;
+   color: #303030;
+   margin-left: 12%;
+   margin-right: 12%;
+   margin-top: 15%;
+   margin-bottom: 5%;
+   
+ }
+ 
+ .content-box2 {
+   display: flex;
+   flex-direction: column;
+
+ }
+ 
+ .video-box2 {
+  width: 100%;
+  margin-left: 0%;
+   align-items: center;
+   justify-content: center;
+   background: none;
+   margin-top: 3%;
+
+
+
+ }
+ 
+ 
+ 
+ .video-box2 img {
+ 
+   width: 100%;
+   height: auto;
+   align-self: center;
+
+
+ }
+ 
+
+
+
+ /* Future Developments */
+ 
+ .titlee2{ /* Heading */
+margin-top: 15%;
+ margin-left: 12%;
+ margin-right: 12%;
+ padding: none;
+ font-family: 'Poppins';
+ font-style: normal;
+ font-weight: 700;
+ font-size: 3.5vw;
+ line-height: 45px;
+ color: #353535
+
+}
+
+
+.header-textt2{
+  display: flex;
+  gap: 8%;
+  margin-bottom: 3%;
+}
+
+
+ .outerr2 { /* Entire box */
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-left: 12%;
+  align-items: center;
+  margin-right: 12%;
+  margin-top: 5%;
+  gap: 6%;
+
+}
+
+
+.header-contentt9{ /* First Box */
+  width: 100%;
+}
+
+.header-contentt2{ /* second box */
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  width: 100%;
+}
+
+
+.in2 { /* Hydraulic system box */
+  display: flex;
+  align-items: center;
+  gap: 5%;
+  font-size: 3vw;
+  color: #323232;
+  font-family: Be Vietnam Pro;
+  font-weight: 300; 
+  line-height: 2em;
+  color: #303030;
+  
+}
+
+
+.inn2 { /* Recycle box */
+  font-size: 3vw;
+  color: #323232;
+  font-family: Be Vietnam Pro;
+  font-weight: 300; 
+  line-height: 2em;
+  color: #303030;
+  display: flex;
+  align-items: center;
+  gap: 10%;
+}
+
+.in221{ /* Wifi Box */
+  display: flex;
+  align-items: center;
+  gap: 10%;
+  font-size: 3vw;
+  color: #323232;
+  font-family: Be Vietnam Pro;
+  font-weight: 300; 
+  line-height: 2em;
+  color: #303030;
+}
+
+.inn22{ /* Message Box */
+  display: flex;
+  align-items: center;
+  gap: 5%;
+  font-size: 3vw;
+  color: #323232;
+  font-family: Be Vietnam Pro;
+  font-weight: 300; 
+  line-height: 2em;
+  color: #303030;
+ 
+}
+
+.in2 img { /* Hydraulic system icon */
+  width: 8%; 
+  height: auto;
+  box-shadow: 0px 0px 10px rgba(92, 92, 92, 0.5);
+  transition: box-shadow 0.3s ease-in-out;
+  background: #303030;
+  border-radius: 1vw;
+}
+
+
+.in221 img{ /* Wifi svg */
+  width: 18%; 
+  height: auto;
+  box-shadow: 0px 0px 10px rgba(92, 92, 92, 0.5);
+  transition: box-shadow 0.3s ease-in-out;
+  background: #303030;
+  border-radius: 1vw;
+}
+
+
+.inn2 img{  /* Recycle icon */
+  width: 18%; 
+  height: auto;
+  box-shadow: 0px 0px 10px rgba(92, 92, 92, 0.5);
+  transition: box-shadow 0.3s ease-in-out;
+  background: #303030;
+  border-radius: 1vw;
+}
+
+
+.inn22 img{ /* Message icon */
+  width: 8%; 
+  height: auto;
+  box-shadow: 0px 0px 10px rgba(92, 92, 92, 0.5);
+  transition: box-shadow 0.3s ease-in-out;
+  background: #303030;
+  border-radius: 1vw;
+
+}
+
+
+.in2 img:hover{
+  animation-duration: 0.3s;
+  box-shadow: 0px 0px 30px #767676;
+}
+
+.in221 img:hover{
+  animation-duration: 0.3s;
+  box-shadow: 0px 0px 30px #767676;
+}
+
+.inn2 img:hover{
+  animation-duration: 0.3s;
+  box-shadow: 0px 0px 30px #767676;
+}
+
+.inn22 img:hover{
+  animation-duration: 0.3s;
+  box-shadow: 0px 0px 30px #767676;
+}
+
+
+
+
+/* Additional Information */
+
+.Addinfo{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3.5vw;
+  color: #303535;
+  margin-top: 10%;
+  margin-left: 12%;
+  margin-right: 12%
+}
+
+
+.image-panel2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-left: 0%;
+  padding-right: 0%;
+
+  margin-right: 12%;
+  margin-left: 12%;
+  margin-top: 10%;
+}
+
+.image-container2 {
+  width: 100%;
+}
+
+.image-container2 img {
+  border-radius: 1.3vw;
+  padding: 0%;
+  overflow: none;
+}
+
+
+.image-container2 video {
+  overflow: hidden;
+  width: 100%;
+ 
+  border-radius: 1.3vw;
+}
+
+.image-container2 video::-webkit-media-controls {
+  display: none;
+}
+
+
+
+.image-container2:first-child:hover,
+.image-container2:last-child:hover {
+  overflow: hidden;
+  opacity: 1;
+}
+
+.image-container2:first-child:not(:hover),
+.image-container2:last-child:not(:hover) {
+  overflow: hidden;
+  opacity: 1;
+}
+
+.image-container2 {
+  overflow: hidden;
+  transition: opacity 0.3s ease;
+}
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
